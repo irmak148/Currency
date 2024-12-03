@@ -9,7 +9,7 @@ Swap currencies with a button click.
 Display conversion results.
 
 Handle errors and display notifications using React Toastify.
-
+git push
 Installation
 Clone the repository:
 

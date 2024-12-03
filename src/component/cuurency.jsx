@@ -9,6 +9,7 @@ import Button from '@mui/material/Button';
 const url = 'https://api.freecurrencyapi.com/v1/latest?apikey={the key freecurency gave you}&currencies=';
 
 function Currency() {
+
   const [amount, setAmount] = useState(0);
   const [fromCurrency, setFromCurrency] = useState('USD');
   const [toCurrency, setToCurrency] = useState('TRY');
@@ -16,6 +17,7 @@ function Currency() {
 
   async function calculate() {
     try {
+      // get api from freecurrencyapi
       const fromResponse = await axios.get(url + fromCurrency);
       const toResponse = await axios.get(url + toCurrency);
 
